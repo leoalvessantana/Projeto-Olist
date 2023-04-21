@@ -37,9 +37,14 @@ O conjunto de dados que representam o contexto está disponível na plataforma d
 
 
 ## Resultados
-...
 
+Os relatorios com as perguntas respondidas podem ser visualizados em: [Relatorio 1](https://github.com/leoalvessantana/Projeto-Olist/blob/main/consultas_SQL/1.queries_basic.sql) e [Relatorio 2](https://github.com/leoalvessantana/Projeto-Olist/blob/main/consultas_SQL/2.queries_advanced.sql).
 
+O Dashboard foi construido útilizando os dados entre (01/2017 e 08/2018), as perguntas selecionadas foram:
+1. Qual o total de pedidos?
+2. Quantidade de pedidos ao longo dos meses
+3. Qual forma de pagamento os clientes preferem?
+4. Qauntidade de pedidos por categoria
 
-
+Como resultado temos o [dashboard](https://github.com/leoalvessantana/Projeto-Olist) solicitado.
 
