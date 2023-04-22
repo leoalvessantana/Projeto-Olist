@@ -48,3 +48,7 @@ O Dashboard foi construido útilizando os dados entre (01/2017 e 08/2018), as pe
 
 Como resultado temos o [dashboard](https://github.com/leoalvessantana/Projeto-Olist) solicitado.
 
+
+## Observação
+Projeto ainda em construção.
+
