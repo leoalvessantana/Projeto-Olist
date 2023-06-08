@@ -135,7 +135,23 @@ FROM products p
 GROUP BY p.product_category_name;
 
 
--- 11. Cria uma tabela que mostre a média de avaliações por dia, a média de preço por dia, a soma dos preços por dia, 
+
+-- 11. Media dos preços dos produtos que tem tem o status igual a delivered.
+SELECT AVG( oi.price ) AS avg_price
+FROM order_items oi
+WHERE oi.order_id IN ( SELECT o.order_id
+			FROM orders o
+			WHERE o.order_status = 'delivered' )
+-- ou 
+SELECT
+   AVG( oi.price )
+FROM orders o LEFT JOIN order_items oi ON ( oi.order_id = o.order_id )
+WHERE o.order_status ='delivered'
+
+
+
+
+-- 12. Cria uma tabela que mostre a média de avaliações por dia, a média de preço por dia, a soma dos preços por dia, 
 -- o preço mínimo por dia, o número de pedidos por dia e o número de clientes únicos que compraram no dia.
 SELECT
 t1.date_,
